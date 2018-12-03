@@ -1,0 +1,13 @@
+{
+  "name": "es6-parcel-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.2.1",
+    "sass": "^1.14.3"
+  },
+  "scripts": {
+    "start": "parcel index.html"
+  }
+}
