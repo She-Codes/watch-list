@@ -1,0 +1,143 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* DEFAULTS */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: palevioletred;
+}
+
+.header-top, .header-bottom {
+  border-bottom: 1px solid #ECEEF1;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.header-top input, .header-bottom input {
+  width: 100%;
+  font-size: 15px;
+  padding: 0.2em 0.2em;
+}
+.header-top .col-1, .header-bottom .col-1 {
+  width: 25%;
+  min-width: 250px;
+  padding-left: 10px;
+}
+.header-top .col-3, .header-bottom .col-3 {
+  margin-left: auto;
+}
+
+.header-top {
+  background: #FFF;
+}
+.header-top .col-2 {
+  width: 25%;
+  min-width: 325px;
+}
+.header-top .col-3 {
+  padding-right: 10px;
+}
+.header-top input {
+  border: 1px solid #ECEEF1;
+  border-radius: 2px;
+}
+
+.header-bottom {
+  background: #F4F8FB;
+}
+.header-bottom .col-1 {
+  border-right: 1px solid #ECEEF1;
+  height: 100%;
+}
+.header-bottom .col-2 {
+  flex: 100;
+  padding-right: 10px;
+}
+.header-bottom .input-wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header-bottom input {
+  border: 0;
+  background: #F4F8FB;
+}
+
+main {
+  background: #ECEEF1;
+  height: 100%;
+  display: flex;
+}
+
+aside {
+  width: 25%;
+  height: 100%;
+  min-width: 250px;
+  border-right: 1px solid #ECEEF1;
+  padding-left: 10px;
+}
+
+.schedule {
+  background: pink;
+  height: 100%;
+  flex: 100;
+  padding-right: 10px;
+}

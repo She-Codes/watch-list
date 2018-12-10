@@ -17,6 +17,7 @@ Thumbs.db
 .sass-cache
 connect.lock
 typings
+.cache
 
 # Logs
 logs
