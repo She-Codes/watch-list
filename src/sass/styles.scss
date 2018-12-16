@@ -57,7 +57,22 @@ html, body {
 }
 
 body {
-  background: palevioletred;
+  font-family: 'Roboto', sans-serif;
+}
+
+input {
+  font-family: 'Roboto', sans-serif;
+}
+
+.brand {
+  font-weight: 900;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03rem;
+
+  i {
+    font-size: 1rem;
+  }
 }
 
 .header-top, .header-bottom {
@@ -126,10 +141,16 @@ body {
   }
 }
 
+header {
+  position: fixed;
+  width: 100%;
+}
+
 main {
-  background: #ECEEF1;
+  background: #F4F8FB;;
   height: 100%;
   display: flex;
+  padding-top: 100px;
 }
 
 aside {
@@ -138,11 +159,32 @@ aside {
   min-width: 250px;
   border-right: 1px solid #ECEEF1;
   padding-left: 10px;
+
+  .show {
+    display: flex;
+    background: #FFF;
+  }
+
+  .image-wrap {
+    width: 12%;
+
+    img {
+      width: 100%;
+    }
+  }
 }
 
 .schedule {
-  background: pink;
   height: 100%;
   flex: 100;
-  padding-right: 10px;
+  display: flex;
+  padding: 10px 10px;
+}
+
+.card {
+  background: #FFF;
+  width: 500px;
+  align-items: stretch;
+  border-radius: 4px;
+  border: 1px solid #ECEEF1;
 }
