@@ -1,5 +1,7 @@
 /* VARIABLES */
 $danger: #DA4856;
+$success: #4BC14B;
+$highlight: #CDB8E4;
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -62,15 +64,25 @@ html, body {
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  color: #313131;
 }
 
 input {
   font-family: 'Roboto', sans-serif;
 }
 
+.success {
+  color: $success;
+}
+
+.danger {
+  color: $danger;
+}
+
 .brand {
   font-family: 'Unica One', cursive;
   //font-weight: 900;
+  color: #A48FBB;
   font-size: 1.8rem;
   text-transform: uppercase;
   //letter-spacing: 0.03rem;
@@ -170,6 +182,7 @@ aside {
     display: flex;
     background: #FFF;
     padding: 5px;
+    border-bottom: 1px solid #ECEEF1;
 
     h3 {
       font-weight: 700;
@@ -188,10 +201,6 @@ aside {
 
     .status {
       font-weight: 500;
-
-      &.ended {
-        color: $danger;
-      }
     }
   }
 
@@ -208,17 +217,25 @@ aside {
 .schedule {
   height: 100%;
   flex: 100;
-  display: flex;
-  padding: 10px 10px;
+  position: relative;
+  overflow-x: auto;
+
+  .wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 10px 10px;
+  }
 }
 
 .card {
+  flex-shrink: 0;
   background: #FFF;
   width: 22vw;
-  align-items: stretch;
   border-radius: 4px;
   border: 1px solid #ECEEF1;
   padding: 5px 10px;
+  margin-right: 10px;
 
   .show {
     display: flex;
@@ -251,5 +268,53 @@ aside {
   hr {
     width: 80%;
     margin: 15px auto;
+  }
+}
+
+.overlay {
+  position: absolute;
+  background: $highlight;
+  width: 100%;
+  height: 100%;
+}
+
+.selected-result {
+  padding: 15px;
+
+  .label {
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+    font-family: 'Unica One', cursive;
+    padding-bottom: 0.2em;
+  }
+
+  .content {
+    display: flex;
+  }
+
+  .main-image {
+    width: 210px;
+  }
+
+  .description {
+    padding: 0 10px 0 20px;
+
+    p {
+      line-height: 1.5;
+    }
+  }
+
+  .show-info {
+    width: 60%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 0.8em 1em;
+    grid-auto-rows: min-content;
+    font-size: 0.9rem;
   }
 }
