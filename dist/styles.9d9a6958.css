@@ -248,6 +248,9 @@ aside .image-wrap img {
   padding-top: 50px;
   padding-right: 40px;
 }
+.overlay img {
+  width: 100%;
+}
 
 .close-button {
   background: none;
@@ -266,10 +269,16 @@ aside .image-wrap img {
   fill: #313131;
 }
 
-.selected-result {
+.selected-result,
+.search-results {
   padding-left: 15px;
   padding-bottom: 15px;
 }
+.selected-result h2,
+.search-results h2 {
+  font-family: "Unica One", cursive;
+}
+
 .selected-result .label {
   font-weight: 700;
   text-transform: uppercase;
@@ -277,14 +286,13 @@ aside .image-wrap img {
 }
 .selected-result h2 {
   font-size: 3.5rem;
-  font-family: "Unica One", cursive;
   padding-bottom: 0.2em;
 }
 .selected-result .content {
   display: flex;
 }
 .selected-result .main-image {
-  width: 210px;
+  width: 350px;
 }
 .selected-result .description {
   padding: 0 10px 0 20px;
@@ -302,4 +310,34 @@ aside .image-wrap img {
   grid-auto-rows: -webkit-min-content;
   grid-auto-rows: min-content;
   font-size: 0.9rem;
+}
+
+.search-results .result {
+  display: flex;
+  margin-bottom: 20px;
+}
+.search-results .main-image {
+  width: 100px;
+}
+.search-results .description {
+  padding-left: 20px;
+}
+.search-results h2 {
+  font-size: 2rem;
+}
+.search-results h3 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  padding-bottom: 0.5em;
+  font-weight: 700;
+}
+.search-results p {
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+.search-results .cast {
+  padding-top: 0.5em;
+}
+.search-results .label {
+  font-weight: 500;
 }

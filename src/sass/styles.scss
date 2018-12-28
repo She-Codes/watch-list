@@ -278,6 +278,10 @@ aside {
   height: 100%;
   padding-top: 50px;
   padding-right: 40px;
+
+  img {
+    width: 100%;
+  }
 }
 
 .close-button {
@@ -297,10 +301,17 @@ aside {
   fill: #313131;
 }
 
-.selected-result {
+.selected-result, 
+.search-results {
   padding-left: 15px;
   padding-bottom: 15px;
 
+  h2 {
+    font-family: 'Unica One', cursive;
+  }
+}
+
+.selected-result {
   .label {
     font-weight: 700;
     text-transform: uppercase;
@@ -309,7 +320,6 @@ aside {
 
   h2 {
     font-size: 3.5rem;
-    font-family: 'Unica One', cursive;
     padding-bottom: 0.2em;
   }
 
@@ -318,7 +328,7 @@ aside {
   }
 
   .main-image {
-    width: 210px;
+    width: 350px;
   }
 
   .description {
@@ -336,5 +346,44 @@ aside {
     grid-gap: 0.8em 1em;
     grid-auto-rows: min-content;
     font-size: 0.9rem;
+  }
+}
+
+.search-results {
+  .result {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .main-image {
+    width: 100px;
+  }
+
+  .description {
+    padding-left: 20px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    padding-bottom: 0.5em;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.2;
+  }
+
+  .cast {
+    padding-top: 0.5em;
+  }
+
+  .label {
+    font-weight: 500;
   }
 }
