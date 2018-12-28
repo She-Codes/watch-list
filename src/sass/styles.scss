@@ -276,10 +276,30 @@ aside {
   background: $highlight;
   width: 100%;
   height: 100%;
+  padding-top: 50px;
+  padding-right: 40px;
+}
+
+.close-button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1000;
+  padding: 0;
+}
+
+.close-icon {
+  width: 24px;
+  height: 24px;
+  fill: #313131;
 }
 
 .selected-result {
-  padding: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
 
   .label {
     font-weight: 700;

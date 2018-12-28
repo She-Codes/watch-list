@@ -7,6 +7,11 @@
   <link href="/styles.9d9a6958.css" rel="stylesheet">
 <script src="/styles.9d9a6958.js"></script></head>
 <body>
+  <svg style="display: none;">
+    <symbol id="close-icon" viewbox="0 0 24 24">
+      <path d="M24 1.485L22.515 0 12 10.515 1.485 0 0 1.485 10.515 12 0 22.515 1.485 24 12 13.484 22.515 24 24 22.515 13.484 12z"></path>
+    </symbol>
+  </svg>
   <header>
     <div class="header-top">
       <div class="col-1">
@@ -69,6 +74,11 @@
     
     <div class="schedule">
       <div class="selected-result overlay">
+        <button class="close-button">
+          <svg class="close-icon">
+            <use xlink:href="#close-icon"></use>
+          </svg>
+        </button>
         <div class="content">
           <div class="main-image">
             <img src="//static.tvmaze.com/uploads/images/medium_portrait/171/428656.jpg" alt="A Million Little Things">
