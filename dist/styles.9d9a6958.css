@@ -247,6 +247,7 @@ aside .image-wrap img {
   height: 100%;
   padding-top: 50px;
   padding-right: 40px;
+  display: none;
 }
 .overlay img {
   width: 100%;
