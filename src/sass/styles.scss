@@ -184,10 +184,37 @@ aside {
     padding: 5px;
     border-bottom: 1px solid #ECEEF1;
 
+    .metadata {
+      flex: 10;
+    }
+
+    header {
+      position: relative;
+    }
+
+    .actions {
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      svg {
+        cursor: pointer;
+      }
+
+      .fa-trash-alt {
+        color: $danger;
+      }
+
+      .fa-eye {
+        color: $highlight;
+      }
+    }
+
     h3 {
       font-weight: 700;
       font-size: 1rem;
       padding-bottom: 0.4em;
+      padding-right: 1.3rem;
     }
 
     p {
@@ -278,7 +305,6 @@ aside {
   height: 100%;
   padding-top: 50px;
   padding-right: 40px;
-  display: none;
 
   img {
     width: 100%;

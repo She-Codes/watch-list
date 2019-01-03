@@ -170,10 +170,31 @@ aside .show {
   padding: 5px;
   border-bottom: 1px solid #ECEEF1;
 }
+aside .show .metadata {
+  flex: 10;
+}
+aside .show header {
+  position: relative;
+}
+aside .show .actions {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+aside .show .actions svg {
+  cursor: pointer;
+}
+aside .show .actions .fa-trash-alt {
+  color: #DA4856;
+}
+aside .show .actions .fa-eye {
+  color: #CDB8E4;
+}
 aside .show h3 {
   font-weight: 700;
   font-size: 1rem;
   padding-bottom: 0.4em;
+  padding-right: 1.3rem;
 }
 aside .show p {
   font-size: 0.85rem;
@@ -247,7 +268,6 @@ aside .image-wrap img {
   height: 100%;
   padding-top: 50px;
   padding-right: 40px;
-  display: none;
 }
 .overlay img {
   width: 100%;

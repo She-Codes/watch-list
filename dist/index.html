@@ -19,7 +19,7 @@
       </div><!-- end .col-1 -->
       <div class="col-2">
         <div class="input-wrap">
-          <input type="text" value="" placeholder="Search Shows">
+          <input type="text" value="" id="show-search-input" placeholder="Search Shows">
         </div>
       </div><!-- end .col-2 -->
       <div class="col-3">
@@ -33,6 +33,9 @@
           <input type="text" value="" placeholder="Type to filter">
         </div>
       </div><!-- end .col-1 -->
+      <div class="col-2">
+        <h2>Friday, December 28, 2018</h2>
+      </div>
     </div><!-- end  .header-bottom -->
   </header>
   
@@ -43,7 +46,13 @@
           <img src="http://static.tvmaze.com/uploads/images/medium_portrait/4/11341.jpg">
         </div>
         <div class="metadata">
-          <h3>Sopranos</h3>
+          <header>
+            <h3>Sopranos</h3>
+
+            <div class="actions">
+              <i class="fas fa-trash-alt"></i>
+            </div>
+          </header>
           <p>Drama, Crime</p>
           <p class="schedule-info">Aired Sundays at 8pm est on HBO | <span class="status danger">Ended</span></p>
         </div>
@@ -73,10 +82,11 @@
     </aside>
     
     <div class="schedule">
+      <!--
       <div class="selected-result overlay">
         <button class="close-button">
           <svg class="close-icon">
-            <use xlink:href="#close-icon"></use>
+            <use xlink:href="#close-icon">
           </svg>
         </button>
         <div class="content">
@@ -118,7 +128,7 @@
       <div class="search-results overlay">
         <button class="close-button">
           <svg class="close-icon">
-            <use xlink:href="#close-icon"></use>
+            <use xlink:href="#close-icon">
           </svg>
         </button>
         <div class="content">
@@ -197,7 +207,7 @@
           </ul>
         </div>
       </div>
-      
+    -->
       <div class="wrap">
         <div class="card">
           <h2>Monday</h2>
@@ -456,5 +466,6 @@
     </div><!-- end .schedule -->
   </main>
 
+  <script defer="" src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
   <script src="/js.d818e0ef.js"></script>
 </body></html>
